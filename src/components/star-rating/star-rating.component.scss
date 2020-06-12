@@ -1,0 +1,16 @@
+@import '../../../../../tellco-styleguide/client/src/styles/colours';
+
+.star-rating {
+  align-items: center;
+  display: flex;
+  height: 20px;
+  justify-content: center;
+
+  .rating {
+    color: $star-rating;
+  }
+
+  .stars {
+    color: $star;
+  }
+}

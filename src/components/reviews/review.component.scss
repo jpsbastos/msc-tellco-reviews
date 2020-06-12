@@ -1,0 +1,32 @@
+.review {
+  margin: 20px 0;
+
+  .star-rating {
+    justify-content: left;
+  }
+
+  .author-container {
+    span {
+      &:first-child {
+        color: #E41A15;
+      }
+
+      &:not(:last-child) {
+        font-weight: bold;
+      }
+    }
+  }
+
+  button {
+    font-weight: bold;
+
+    span {
+      padding: 2px;
+    }
+
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}
