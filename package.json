@@ -3,9 +3,9 @@
     "start": "webpack-dev-server",
     "build": "webpack --mode=production",
     "analyze": "webpack --mode=production --env.analyze=true",
-    "lint": "eslint src --ext js,ts,tsx",
+    "lint": "eslint src --ext js,ts,tsx --fix",
     "format": "prettier --write './**'",
-    "test": "jest",
+    "test": "jest --passWithNoTests",
     "watch-tests": "jest --watch",
     "coverage": "jest --coverage"
   },
