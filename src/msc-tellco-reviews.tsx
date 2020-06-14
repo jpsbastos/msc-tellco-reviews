@@ -3,7 +3,7 @@ import "./msc-tellco-reviews.scss";
 import React from "react";
 import ReactDOM from "react-dom";
 import singleSpaReact from "single-spa-react";
-import { ReviewListComponent } from './components/reviews/reviews-list.component';
+import { ReviewListComponent } from "./components/reviews/reviews-list.component";
 
 const lifecycles = singleSpaReact({
   React,
@@ -17,5 +17,5 @@ const lifecycles = singleSpaReact({
 
 export const { bootstrap, mount, unmount } = lifecycles;
 
-export { StarRating } from './components/star-rating/star-rating.component';
-export { ReviewListComponent } from './components/reviews/reviews-list.component';
+export { StarRating } from "./components/star-rating/star-rating.component";
+export { ReviewListComponent } from "./components/reviews/reviews-list.component";
