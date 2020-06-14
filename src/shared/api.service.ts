@@ -1,5 +1,5 @@
 import { ajax } from "rxjs/ajax";
-import { Observable } from "rxjs/internal/Observable";
+import { Observable } from "rxjs";
 
 const BASE_PATH = "https://msc-tellco-reviews-service.herokuapp.com";
 const ENDPOINT = "reviews";
@@ -8,7 +8,7 @@ class ApiService {
   /**
    * @param id id
    */
-  public getReviewsByProductId(id: string): Observable<IReview[]> {
+  public getReviewsByProductId(id: number): Observable<IReview[]> {
     return this.get<IReview[]>(`${ENDPOINT}?productId=${id}`);
   }
 
